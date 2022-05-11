@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "ml+7Gt/B5mArM58PqMGHW3W5alzD6rRvV8CVId/nLeSLmj3uqtzDCdmbQSmSV4V9K4+/rOY54WQZPm4SoUPrHQ==",
+  "success": true,
+  "projectFilePath": "S:\\GithubRepos\\SerilogWithNet6\\SerilogConsoleAppWithNet6\\BlazorServerSideApp\\BlazorServerSideApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mysel\\.nuget\\packages\\microsoft.aspnetcore.authentication.negotiate\\6.0.5\\microsoft.aspnetcore.authentication.negotiate.6.0.5.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\microsoft.aspnetcore.connections.abstractions\\6.0.5\\microsoft.aspnetcore.connections.abstractions.6.0.5.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\microsoft.extensions.features\\6.0.5\\microsoft.extensions.features.6.0.5.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\system.directoryservices.protocols\\6.0.1\\system.directoryservices.protocols.6.0.1.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\system.io.pipelines\\6.0.3\\system.io.pipelines.6.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
