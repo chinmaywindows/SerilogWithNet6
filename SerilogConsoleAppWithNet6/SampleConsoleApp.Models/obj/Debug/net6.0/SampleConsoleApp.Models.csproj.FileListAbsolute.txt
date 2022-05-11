@@ -1,0 +1,12 @@
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\SampleConsoleApp.Models.csproj.AssemblyReference.cache
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\SampleConsoleApp.Models.GeneratedMSBuildEditorConfig.editorconfig
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\SampleConsoleApp.Models.AssemblyInfoInputs.cache
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\SampleConsoleApp.Models.AssemblyInfo.cs
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\SampleConsoleApp.Models.csproj.CoreCompileInputs.cache
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\bin\Debug\net6.0\SampleConsoleApp.Models.deps.json
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\bin\Debug\net6.0\SampleConsoleApp.Models.dll
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\bin\Debug\net6.0\SampleConsoleApp.Models.pdb
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\SampleConsoleApp.Models.dll
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\refint\SampleConsoleApp.Models.dll
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\SampleConsoleApp.Models.pdb
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Models\obj\Debug\net6.0\ref\SampleConsoleApp.Models.dll

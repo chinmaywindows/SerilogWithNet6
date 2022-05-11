@@ -1,0 +1,15 @@
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\bin\Debug\net6.0\SampleConsoleApp.Data.deps.json
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\bin\Debug\net6.0\SampleConsoleApp.Data.dll
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\bin\Debug\net6.0\SampleConsoleApp.Data.pdb
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\bin\Debug\net6.0\SampleConsoleApp.Models.dll
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\bin\Debug\net6.0\SampleConsoleApp.Models.pdb
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\SampleConsoleApp.Data.csproj.AssemblyReference.cache
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\SampleConsoleApp.Data.GeneratedMSBuildEditorConfig.editorconfig
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\SampleConsoleApp.Data.AssemblyInfoInputs.cache
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\SampleConsoleApp.Data.AssemblyInfo.cs
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\SampleConsoleApp.Data.csproj.CoreCompileInputs.cache
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\SampleConsoleApp.Data.csproj.CopyComplete
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\SampleConsoleApp.Data.dll
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\refint\SampleConsoleApp.Data.dll
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\SampleConsoleApp.Data.pdb
+S:\GithubRepos\SerilogConsoleAppWithNet6\SampleConsoleApp.Data\obj\Debug\net6.0\ref\SampleConsoleApp.Data.dll

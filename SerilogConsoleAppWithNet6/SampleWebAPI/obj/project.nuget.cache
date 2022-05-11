@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "EjlvB5s3QRIgqwYnsvOyYnCOmiX5kOK98OYPINu/4Tv9mMOIrzOVeJqAFYA8VndqPhe6qtgFoYTBoHYBFVzOZQ==",
+  "success": true,
+  "projectFilePath": "S:\\GithubRepos\\SerilogWithNet6\\SerilogConsoleAppWithNet6\\SampleWebAPI\\SampleWebAPI.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\mysel\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\mysel\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
