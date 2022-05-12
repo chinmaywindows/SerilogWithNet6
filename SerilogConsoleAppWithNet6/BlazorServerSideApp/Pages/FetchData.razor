@@ -1,9 +1,10 @@
 ﻿@page "/fetchdata"
 
 <PageTitle>Weather forecast</PageTitle>
-
+@using Serilog
 @using BlazorServerSideApp.Data
 @inject WeatherForecastService ForecastService
+@inject ILogger<FetchData> Logger
 
 <h1>Weather forecast</h1>
 
@@ -43,6 +44,8 @@ else
 
     protected override async Task OnInitializedAsync()
     {
+        Logger.LogInformation("OnInitializedAsync");
         forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+        Logger.LogInformation("OnInitializedAsync done");
     }
 }

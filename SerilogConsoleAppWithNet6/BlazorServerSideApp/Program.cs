@@ -2,8 +2,34 @@ using BlazorServerSideApp.Data;
 using Microsoft.AspNetCore.Authentication.Negotiate;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
+
+var configuration = new ConfigurationBuilder()
+    .SetBasePath(Directory.GetCurrentDirectory())
+    .AddJsonFile("appsettings.json")
+    .Build();
+
+
+Log.Logger = new LoggerConfiguration()
+    .ReadFrom.Configuration(configuration)    
+    .WriteTo.Console()
+    .WriteTo.Logger(lc => lc
+                    .Filter.ByIncludingOnly(" @l = 'Debug' or @l = 'Information' or @l = 'Warning'")
+                    .WriteTo.File("Logs/log-Information-.log", rollingInterval: RollingInterval.Day))
+    .WriteTo.Logger(lc => lc
+                    .Filter.ByIncludingOnly(" @l = 'Error' or @l = 'Fatal'")
+                    .WriteTo.File("Logs/log-Error-.log", rollingInterval: RollingInterval.Day))
+    .CreateLogger();
+
+Log.Information("Starting up");
+
+
+Serilog.Log.Information("Starting application");
+Serilog.Log.Error("Error");
+Serilog.Log.Fatal("Fatal");
+Serilog.Log.Debug("Debug");
 
 // Add services to the container.
 builder.Services.AddAuthentication(NegotiateDefaults.AuthenticationScheme)

@@ -9,9 +9,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleConsoleApp.Models", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleConsoleApp.Data", "SampleConsoleApp.Data\SampleConsoleApp.Data.csproj", "{CEF53F24-310E-44FA-8870-B8697B3F0BDB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebApp", "SampleWebApp\SampleWebApp.csproj", "{0B7CA71F-A2BD-46B6-A722-0B385CD58212}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWebApp", "SampleWebApp\SampleWebApp.csproj", "{0B7CA71F-A2BD-46B6-A722-0B385CD58212}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleWebAPI", "SampleWebAPI\SampleWebAPI.csproj", "{A4A35131-0E40-4522-A217-1853CD5988CA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleWebAPI", "SampleWebAPI\SampleWebAPI.csproj", "{A4A35131-0E40-4522-A217-1853CD5988CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorServerSideApp", "BlazorServerSideApp\BlazorServerSideApp.csproj", "{297F282C-8908-446F-BB6F-C0BB666FEAED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A4A35131-0E40-4522-A217-1853CD5988CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A4A35131-0E40-4522-A217-1853CD5988CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A4A35131-0E40-4522-A217-1853CD5988CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{297F282C-8908-446F-BB6F-C0BB666FEAED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297F282C-8908-446F-BB6F-C0BB666FEAED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297F282C-8908-446F-BB6F-C0BB666FEAED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297F282C-8908-446F-BB6F-C0BB666FEAED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
