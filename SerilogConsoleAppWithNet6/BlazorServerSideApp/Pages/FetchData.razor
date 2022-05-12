@@ -45,6 +45,11 @@ else
     protected override async Task OnInitializedAsync()
     {
         Logger.LogInformation("OnInitializedAsync");
+        Serilog.Log.Information("Starting application");
+        Serilog.Log.Error("Error");
+        Serilog.Log.Fatal("Fatal");
+        Serilog.Log.Debug("Debug");
+
         forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
         Logger.LogInformation("OnInitializedAsync done");
     }
