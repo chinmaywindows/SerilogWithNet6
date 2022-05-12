@@ -1,8 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\SerilogConsoleAppWithNet6"
+    "\\SerilogConsoleAppWithNet6",
+    "\\SerilogConsoleAppWithNet6\\BlazorServerSideApp",
+    "\\SerilogConsoleAppWithNet6\\BlazorServerSideApp\\Pages"
   ],
-  "SelectedNode": "\\SerilogConsoleAppWithNet6\\SerilogConsoleAppWithNet6.sln",
+  "SelectedNode": "\\SerilogConsoleAppWithNet6\\BlazorServerSideApp\\Pages\\FetchData.razor",
   "PreviewInSolutionExplorer": false
 }
