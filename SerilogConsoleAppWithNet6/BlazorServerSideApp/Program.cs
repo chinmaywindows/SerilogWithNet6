@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Authentication.Negotiate;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
 using Serilog;
+using Serilog.Events;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,10 +17,12 @@ Log.Logger = new LoggerConfiguration()
     .ReadFrom.Configuration(configuration)    
     .WriteTo.Console()
     .WriteTo.Logger(lc => lc
-                    .Filter.ByIncludingOnly(" @l = 'Debug' or @l = 'Information' or @l = 'Warning'")
+                    //.Filter.ByIncludingOnly(" @l = 'Debug' or @l = 'Information' or @l = 'Warning'")
+                    .Filter.ByIncludingOnly(l => l.Level == LogEventLevel.Warning || l.Level == LogEventLevel.Information || l.Level == LogEventLevel.Debug)
                     .WriteTo.File("Logs/log-Information-.log", rollingInterval: RollingInterval.Day))
     .WriteTo.Logger(lc => lc
-                    .Filter.ByIncludingOnly(" @l = 'Error' or @l = 'Fatal'")
+                    //.Filter.ByIncludingOnly(" @l = 'Error' or @l = 'Fatal'")
+                    .Filter.ByIncludingOnly(l => l.Level == LogEventLevel.Error || l.Level == LogEventLevel.Fatal)
                     .WriteTo.File("Logs/log-Error-.log", rollingInterval: RollingInterval.Day))
     .CreateLogger();
 
