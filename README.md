@@ -1,0 +1,1 @@
+# SerilogWithNet6
