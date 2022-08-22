@@ -9,6 +9,9 @@ namespace BlazorAppWithDBLogging.Data
 
         public Task<WeatherForecast[]> GetForecastAsync(DateTime startDate)
         {
+            Serilog.Log.Information("Logging into Business Logic Area");
+            Serilog.Log.Information("WeatherSerivce called...");
+
             return Task.FromResult(Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = startDate.AddDays(index),
