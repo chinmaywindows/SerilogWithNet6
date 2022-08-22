@@ -1,4 +1,4 @@
-using BlazorServerSideApp.Data;
+using BlazorAppWithDBLogging.Data;
 using Microsoft.AspNetCore.Authentication.Negotiate;
 using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Components.Web;
@@ -14,16 +14,16 @@ var configuration = new ConfigurationBuilder()
 
 
 Log.Logger = new LoggerConfiguration()
-    .ReadFrom.Configuration(configuration)    
-    .WriteTo.Console()
-    .WriteTo.Logger(lc => lc
-                    //.Filter.ByIncludingOnly(" @l = 'Debug' or @l = 'Information' or @l = 'Warning'")
-                    .Filter.ByIncludingOnly(l => l.Level == LogEventLevel.Warning || l.Level == LogEventLevel.Information || l.Level == LogEventLevel.Debug)
-                    .WriteTo.File("Logs/log-Information-.log", rollingInterval: RollingInterval.Day))
-    .WriteTo.Logger(lc => lc
-                    //.Filter.ByIncludingOnly(" @l = 'Error' or @l = 'Fatal'")
-                    .Filter.ByIncludingOnly(l => l.Level == LogEventLevel.Error || l.Level == LogEventLevel.Fatal)
-                    .WriteTo.File("Logs/log-Error-.log", rollingInterval: RollingInterval.Day))
+    .ReadFrom.Configuration(configuration)
+    //.WriteTo.Console()
+    //.WriteTo.Logger(lc => lc
+    //                //.Filter.ByIncludingOnly(" @l = 'Debug' or @l = 'Information' or @l = 'Warning'")
+    //                .Filter.ByIncludingOnly(l => l.Level == LogEventLevel.Warning || l.Level == LogEventLevel.Information || l.Level == LogEventLevel.Debug)
+    //                .WriteTo.File("Logs/log-Information-.log", rollingInterval: RollingInterval.Day))
+    //.WriteTo.Logger(lc => lc
+    //                //.Filter.ByIncludingOnly(" @l = 'Error' or @l = 'Fatal'")
+    //                .Filter.ByIncludingOnly(l => l.Level == LogEventLevel.Error || l.Level == LogEventLevel.Fatal)
+    //                .WriteTo.File("Logs/log-Error-.log", rollingInterval: RollingInterval.Day))
     .CreateLogger();
 
 Log.Information("Starting up");
@@ -44,15 +44,12 @@ builder.Services.AddAuthorization(options =>
     options.FallbackPolicy = options.DefaultPolicy;
 });
 
+
+
 builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddSingleton<WeatherForecastService>();
-//Below lines required to enable and forward everything to Serilog's configure sinks.
-builder.Host.UseSerilog((ctx, lc) => lc
-.Enrich.FromLogContext()
-.Enrich.WithEnvironmentUserName().Enrich.WithMachineName().Enrich.WithProcessName().Enrich.WithThreadName()
-.Enrich.WithProperty("Env","Development")
-.ReadFrom.Configuration(ctx.Configuration));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
